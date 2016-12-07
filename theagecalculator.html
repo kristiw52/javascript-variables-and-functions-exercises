@@ -15,11 +15,20 @@
     <h1>The Age Calculator</h1>
     <div id="output"></div>
     <script>
-      // YOUR CODE GOES HERE
 
-      // Call the addOutput function with your output value
-      // when you are ready.
-      // Example: addOutput(outputValue);
+      var futureYear = 2020;
+      var currentYear = 2016;
+      var birthYear = 1980;
+
+      var futureAge = currentYear - birthYear;
+      var currentAge = futureAge - 1;
+
+
+      var age = "I will be either " + futureAge + " or " + currentAge + " in " + currentYear;
+
+      //console.log(age)
+      addOutput(age);
+      
     </script>
   </body>
 </html>
