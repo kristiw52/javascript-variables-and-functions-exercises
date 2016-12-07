@@ -15,11 +15,15 @@
     <h1>The Lifetime Supply Calculator</h1>
     <div id="output"></div>
     <script>
-      // YOUR CODE GOES HERE
+      var oldAge = 60;
+      var numberOfYears = 20;
+      var snackDaily = 10;
 
-      // Call the addOutput function with your output value
-      // when you are ready.
-      // Example: addOutput(outputValue);
+      var snacks = numberOfYears * snackDaily * 365;
+
+      var eat = "You will need " + snacks + " to last you until the ripe old age of " + oldAge;
+      //console.log(eat)
+      addOutput(eat);
     </script>
   </body>
 </html>
