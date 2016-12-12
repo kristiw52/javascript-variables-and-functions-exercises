@@ -15,16 +15,22 @@
     <h1>The Geometrizer</h1>
     <div id="output"></div>
     <script>
-      // TIPS:
-      // - The formula for the circumference of a circle is 2*pi*radius
-      // - The formula for the area of a circle is 2*pi*radius*radius
-      // - The value of pi is available as a constant Math.PI
-      //   e.g. console.log(Math.PI) should output 3.141592653589793
-      // YOUR CODE GOES HERE
+       // calculate supply required
+       var MATH_PI = 3.141592653589793
+       var radius = 2;
 
-      // Call the addOutput function with your output value
-      // when you are ready.
-      // Example: addOutput(outputValue);
+       var circumference = MATH_PI * 2 * radius;
+       var area = MATH_PI * 2 * radius * radius;
+
+       // build message to output
+       var calculateCircumference  = "The circumference is " + circumference;
+       var calculateArea = "The area is " + area;
+      
+
+       // output message to page
+         //console.log(calculateCircumference);
+      addOutput(calculateCircumference);
+      addOutput(calculateArea);
     </script>
   </body>
 </html>

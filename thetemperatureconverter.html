@@ -15,16 +15,23 @@
     <h1>The Temperature Converter</h1>
     <div id="output"></div>
     <script>
-      // TIPS:
-      // - The formula to convert Celsius to Fahrenheit is:
-      //   (celsius * (9/5)) + 32
-      // - The formula to convert Fahrenheit to Celsius is:
-      //   (fahrenheit - 32) * (5/9)
-      // YOUR CODE GOES HERE
+      // calculate supply required
+      var celsius = 30;
+      var farenheit = 70;
 
-      // Call the addOutput function with your output value
-      // when you are ready.
-      // Example: addOutput(outputValue);
+      var celsiusCalc = (celsius * 9)/5 + 32;
+      var farenheitCalc = ((farenheit - 32)*5)/9;
+
+     
+       // build message to output
+      var calculateCelsius  = celsius + ' °C is ' + farenheitCalc + ' °F ';
+      var calculateFarenheit  = farenheit + ' °F is ' + celsiusCalc + ' °C ';
+       
+      
+       // output message to page
+         //console.log(calculateCelsius);
+      addOutput(calculateCelsius);
+      addOutput(calculateFarenheit);
     </script>
   </body>
 </html>
