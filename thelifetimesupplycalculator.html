@@ -15,36 +15,25 @@
     <h1>The Lifetime Supply Calculator</h1>
     <div id="output"></div>
     <script>
-      var MAX_AGE = 20;
       function calculateSupply ( age, amountPerDay ) {
-        // calculate supply required
-        var numberOfYears = MAX_AGE - age;
+      var MAX_AGE = 20;
+      var numberOfYears = MAX_AGE - age;
         
-        var snacks = numberOfYears * amountPerDay *365;
+      var snacks = numberOfYears * amountPerDay *365;
 
 
-        // build message to output
-        var eat = "You will need " + snacks + " to last you until the ripe old age of " + MAX_AGE;
+      // build message to output
+      var eat = "You will need " + snacks + " to last you until the ripe old age of " + MAX_AGE;
 
-        // output message to page
-        addOutput(eat);
+      // output message to page
+      addOutput(eat);
       }
 
       calculateSupply(10, 5);
       calculateSupply(20, 3);
       calculateSupply(5, 4);
 
-/*
-Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
-
-Write a function named calculateSupply that:
-takes 2 arguments: age, amount per day.
-calculates the amount consumed for rest of the life (based on a constant max age).
-outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
-Call that function three times, passing in different values each time.
-Bonus: Accept floating point values for amount per day, and round the result to a round number.  */
-
-    /*variable exercise
+   /*variable exercise
       var oldAge = 60;
       var numberOfYears = 20;
       var snackDaily = 10;

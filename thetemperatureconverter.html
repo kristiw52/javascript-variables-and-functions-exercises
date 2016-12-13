@@ -15,6 +15,35 @@
     <h1>The Temperature Converter</h1>
     <div id="output"></div>
     <script>
+    function celsiusToFarenheit(celsius) {
+      var celsiusCalc = (celsius * 9)/5 + 32;
+      var celsiusTemp = celsius + " °C is " + celsiusCalc + " °F ";
+      addOutput(celsiusTemp);
+  	}
+    celsiusToFarenheit(30);
+
+    
+    function farenheitToCelsius (farenheit) {
+	  var farenheitCalc = ((farenheit - 32)*5)/9;
+	  var farenheitTemp = farenheit + " °F is " + farenheitCalc + " °C ";
+	  addOutput(farenheitTemp);
+	}
+	farenheitToCelsius(70);
+
+	
+
+  //  It's hot out! Let's make a converter based on the steps here.
+
+//Create a function called celsiusToFahrenheit:
+
+//Store a celsius temperature into a variable.
+//Convert it to fahrenheit and output "NN°C is NN°F".
+//Create a function called fahrenheitToCelsius:
+
+//Now store a fahrenheit temperature into a variable.
+//Convert it to celsius and output "NN°F is NN°C."
+
+    /* variables exercise
       // calculate supply required
       var celsius = 30;
       var farenheit = 70;
@@ -32,6 +61,7 @@
          //console.log(calculateCelsius);
       addOutput(calculateCelsius);
       addOutput(calculateFarenheit);
+      */
     </script>
   </body>
 </html>
