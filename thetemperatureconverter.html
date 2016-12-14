@@ -15,20 +15,20 @@
     <h1>The Temperature Converter</h1>
     <div id="output"></div>
     <script>
-    function celsiusToFarenheit(celsius) {
-      var celsiusCalc = (celsius * 9)/5 + 32;
-      var celsiusTemp = celsius + " °C is " + celsiusCalc + " °F ";
-      addOutput(celsiusTemp);
-  	}
-    celsiusToFarenheit(30);
+      function celsiusToFarenheit(celsius) {
+        var celsiusCalc = (celsius * 9)/5 + 32;
+        var celsiusTemp = celsius + " °C is " + celsiusCalc + " °F ";
+        addOutput(celsiusTemp);
+    	}
+      celsiusToFarenheit(30);
 
-    
-    function farenheitToCelsius (farenheit) {
-	  var farenheitCalc = ((farenheit - 32)*5)/9;
-	  var farenheitTemp = farenheit + " °F is " + farenheitCalc + " °C ";
-	  addOutput(farenheitTemp);
-	}
-	farenheitToCelsius(70);
+      
+      function farenheitToCelsius(farenheit) {
+    	  var farenheitCalc = ((farenheit - 32)*5)/9;
+    	  var farenheitTemp = farenheit + " °F is " + farenheitCalc + " °C ";
+    	  addOutput(farenheitTemp);
+    	}
+    	farenheitToCelsius(70);
 
 	
 

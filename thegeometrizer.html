@@ -15,25 +15,25 @@
     <h1>The Geometrizer</h1>
     <div id="output"></div>
     <script>
-    function calcCircumference (radius) {
-      var radiusCalc = " The circumference is " + radius;
+      function calcCircumference(radius) {
+        var radiusCalc = " The circumference is " + (2 * Math.PI * radius);
 
-      addOutput(radiusCalc);
-    }
+        addOutput(radiusCalc);
+      }
 
-    calcCircumference(5);
-    calcCircumference(10);
-    calcCircumference(20);
+      calcCircumference(5);
+      calcCircumference(10);
+      calcCircumference(20);
 
-    function calcArea (area) {
-      var areaCalc = " The area is " + area;
+      function calcArea(radius) {
+        var areaCalc = " The area is " + Math.PI * radius * radius;
 
-      addOutput(areaCalc);
-    }
+        addOutput(areaCalc);
+      }
 
-    calcArea(5);
-    calcArea(10);
-    calcArea(20);
+      calcArea(5);
+      calcArea(10);
+      calcArea(20);
 
 
     /* variable exercise
